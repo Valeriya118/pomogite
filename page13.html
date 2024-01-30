@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Non-Existent Planets</title>
+	<link rel="stylesheet"type="text/css" href="{{ url_for('static', filename='style13.css')}}">
+</head>
+<body>
+
+
+<main>
+<span class="span">
+  <div class="div">
+    <div class="div-2">
+      <a href="page1.html"><span class="span-2">Домой</span></a>
+      <a href="page2.html"><span class="span-3">Назад</span></a>
+    </div>
+    <a href="page15.html"><span class="span-4">Корзина</span></a>
+  </div>
+  <div class="div-3" id="planet-name">HR 8799 b</div>
+  <div class="div-4">
+    <div class="div-5">
+      <div class="column">
+        <span class="span-5">
+          <div class="div-6">Радиус: 7.645 км</div>
+          <div class="div-7">Плотность: 2.91 г/см³</div>
+          <div class="div-8">Температура: 739 °C</div>
+		  <div class="div-9">Цена: 4.388.000.000 $</div>
+        </span>
+      </div>
+      <div class="column-2">
+        <img id="planet-image" src="{{ url_for('static', filename='img/Giant3.jpg')}}" class="img"/>
+		<a href="page16.html?planet=HR 8799 b&image={{ url_for('static', filename='img/Giant3.jpg') }}"><span class="span-6">В Корзину</span></a>
+      </div>
+    </div>
+  </div>
+</span>
+</main>
+
+
+
+<script src="new3.js"></script>
+</body>
+</html>
+

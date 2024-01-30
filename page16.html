@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Корзина</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style16.css')}}">
+
+ <script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const planetName = urlParams.get('planet');
+    const planetImage = urlParams.get('image');
+    document.getElementById('planet-name').innerText = planetName;
+    document.getElementById('planet-image').src = planetImage;
+ </script>
+</head>
+<body>
+
+<main>
+ <div class="div">
+ <span class="span">
+   <a href="page1.html"><span class="span-2">Домой</span></a>
+   <div class="div-2">КОРЗИНА</div>
+ </span>
+ <div class="div-3">
+   <div class="div-4">
+    <span class="span-3">
+     <div class="div-5" id="planet-name"></div>
+     <div class="div-6">Цена: 1.600.000.000 $</div>
+    </span>
+    <img id="planet-image" src="{{ url_for('static', filename='img/id')}}" class="img"/>
+   </div>
+ </div>
+ <div class="div-7">
+   <a href="page17.html"><span class="span-4">Перейти к оплате</span></a>
+ </div>
+ </div>
+</main>
+
+</body>
+</html>

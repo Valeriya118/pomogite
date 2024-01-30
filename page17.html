@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Non-Existent Planets</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style17.css')}}">
+</head>
+<body>
+
+<main>
+    <div class="div">
+        <span class="span">
+            <div class="div-2">
+                <a href="page1.html"><span class="span-2">Домой</span></a>
+                <a href="page16.html"><span class="span-3">Назад</span></a>
+            </div>
+            <div class="div-3">ПОКУПКА</div>
+        </span>
+        <div class="div-5">
+            <div class="div-6">
+                {{ form.csrf_token }}
+                <span class="span-5">{{ form.name.label }}</span>
+                <span class="span-6">{{ form.last_name.label }}</span>
+                <span class="span-7">{{ form.phone.label }}</span>
+                <span class="span-8">{{ form.address.label }}</span>
+                <span class="span-9">{{ form.card_number.label }}</span>
+                <span class="span-10">{{ form.expiration_date.label }}</span>
+	        <span class="span-12">{{ form.cvv.label }}</span>
+            </div>
+            <span class="span-11">
+                <div class="div-4">Kepler-22b</div>
+                <img src="{{ url_for('static', filename='img/Earth1.jpg')}}" class="img"/>
+                <div class="div-7">Цена: 1.600.000.000 $</div>
+            </span>
+        </div>
+        <span class="span-13">Подтвердить</span>
+    </div>
+</main>
+
+<script src="new3.js"></script>
+</body>
+</html>
